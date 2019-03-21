@@ -1,11 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@font-face {
+	font-family: 'LatoHairline_N';
+	src: local('Lato Hairline'), 
+		local('Lato-Hairline'),
+		url('../fonts/latohairline/latohairline.woff2') format('woff2'), 
+		url('../fonts/latohairline/latohairline.woff') format('woff'), 
+		url('latohairline.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'LatoHairline_I';
+	src: local('Lato Hairline Italic'), 
+	local('Lato-HairlineItalic'), 
+	url('../fonts/latohairline/latohairlineitalic.woff2') format('woff2'), 
+	url('../fonts/latohairline/latohairlineitalic.woff') format('woff'), 
+	url('latohairlineitalic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
 * {
 	box-sizing: border-box;
 }
 html {
 	height: 100%;
 	font-size: 10px;
-	color: #444444;
+	color: #000;
 	font-family: 'Lato', sans-serif;
 }
 body {
@@ -18,46 +38,7 @@ header {
 	left: 0;
 	right: 0;
 }
-.lo {
-	position: absolute;
-	top: 7px;
-	left: 178px;
-}
-.D {
-	position: absolute;
-	top: 45px;
-	left: 206px;
-	
-}
-.F {
-	position: absolute;
-	top: 12px;
-	left: 208px;
-}.Fork {
-	position: absolute;
-	top: 3px;
-	left: 174px;
-}
-.I {
-	position: absolute;
-	top: 32px;
-	left: 194px;
-}
-.spoon {
-	position: absolute;
-	top: 4px;
-	left: 230px;
-}
-.XX {
-	position: absolute;
-	top: 11px;
-	left: 189px;
-}
-.U {
-	position: absolute;
-	top: 26px;
-	left: 224px;
-}
+
 header a {
 	color: #fff;
 	text-decoration: none;
@@ -74,13 +55,16 @@ nav ul li {
 	margin-left: 2rem;
 	font-size: 1.4rem;
 }
+.logo {
+	 color: red;
+}
 
 .conteiner {
 	max-width: 1140px;
 	width: 90%;
 	margin: 0 auto;
 	padding: 4.5rem 10rem;
-	text-shadow: .3rem -0.2rem rgba(0, 0, 0, .5);
+	text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
 
 }
 nav a:hover,
@@ -92,33 +76,32 @@ nav a:active {
 /* .section {
 	padding: 34rem 0 0 0 ;
 } */
+
 .sections {
 	background-position: center;
 	background-size: cover;
 	background-color: #0e0d1b;
 	color: #fff;
-	height: 100vh;
-	padding: 34rem 0 0 0 ;
-	
-	/* display: flex;
-	flex-direction: column;
-	justify-content: center;
-	 */text-align: center;
+	height:100vh;
+	padding-top: 34rem;
+	text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
+	text-align: center;
 }
-.sections h1 {
+.section h1 {
 	font-size: 3.6rem;
 	font-style: italic;
 	font-family: "Times New Roman", sans-serif;
 	color: #e9dada;
-	text-shadow: .3rem -0.2rem rgba(0, 0, 0, .5);
+	/*text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);*/
 }
-.sections h1 p{
+.section h1 p{
 	font-size: 10rem;
-	margin: 0;	
+	margin: 0;  
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	font-style: normal;
 	color: #fff;
+	/*line-height: 3rem;*/
 	
 }
 .BStart {
@@ -128,9 +111,12 @@ nav a:active {
 	font-size: 1.8rem;
 	text-decoration: none;
 	font-weight: 700;
-	padding: 1.5rem 5.5rem;
+	padding: 2rem;
 	transition: all .4s ease-in-out;
 	border-radius: 5px;
+	width: 28rem;
+	height: 6.8rem;
+	display: inline-block;
 }
 .BStart:hover,
 .BStart:focus,
@@ -152,5 +138,190 @@ nav a:active {
 .SendUs:active {
 	text-decoration: underline;
 	color: #faaaaa;
+}
+.section2 {
+	margin: 0 auto;
+	width: 85%;
+	padding: 5rem 0 0 0;
+
+}
+.get {
+	display: inline-block;
+	text-align: center;
+	margin: 0;
+	padding: 1rem;
+	outline: 1px solid red;
+	width: 33%;
+	color: #000;
+	
+	}
+.get img {
+	border-radius: 50%;
+	border: 2px solid black;
+	padding: 2.6rem
+}
+.get h3 {
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: 3rem;
+	text-align: center;
+}
+.get p {
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 1.8rem;
+	text-align: center;
+	color: #8b8b8b;
+}
+.getR img{
+	padding: 4.0rem 2.3rem; 
+}
+.section3 {
+	margin: 0 auto;
+	width: 100%;
+	padding: 5rem 10rem 0 ;
+	background-color: #f7f7f7;
+	display: flex;
+	max-height: 73rem;
+	overflow:hidden;
+	
+}
+.get3 {
+	
+	margin: 0rem;
+	outline: 1px solid red;
+	width: 45%;
+	color: #000;
+	vertical-align: top;
+	overflow:hidden;
+}
+.img3 {
+width: 100%;
+	
+
+}
+.get3-1 {
+	padding-top: 10rem;
+	margin-left: 10rem;
+	}
+.get3 h1 {
+	width: 100%;
+	margin: 0;
+	font-size: 1.8rem;
+	font-weight: 700;
+
+}
+.get3 p {
+	color: #000000;
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 1.8rem;
+}
+.get3 p:first-of-type {
+	margin-top:  4rem;
+}
+.section4 {
+	margin: 0 auto;
+	width: 100%;
+	padding: 5rem 10rem ;
+	background-color: #4a3949;
+/* 	position: relative;
+	top: -26.1rem; */
+	}
+.get4 {
+	margin: 0 auto;
+	width: 85%;
+	text-align: center;
+}
+.get4 img {
+		padding: 2.6rem 1rem;
+}
+.get4 blockquote {
+	display: block;
+	font-family: 'LatoHairline_N', sans-serif;
+	font-size: 3.6rem;
+	color: #fff;
+}
+.get4 blockquote:before,
+.get4 blockquote:after{
+	content: '"';
+	font-size: 2rem;
+}
+.get4 footer {
+	font-family: 'LatoHairline_I', sans-serif;
+	font-size: 1.8rem;
+	color: #fff
+}
+.section5 {
+	margin: 0;
+}
+.section5 h1 {
+	font-size: 1.8rem;
+	text-align: center;
+	font-weight: 700;
+}
+.section5 ul {
+	margin: 0;
+	padding: 2rem 0;
+	display: flex;
+	flex-wrap: wrap; 
+	
+}
+.section5 li {
+	width: 20%;
+
+	list-style-type: none;
+}
+.section5 img {
+	max-width: 100%;
+}
+.get5 {
+	position: relative;
+}
+.get5 div {
+	position: absolute;
+   top: 0;
+   left: 0;
+   margin: 0 auto;
+   height: 95%;
+   width: 95%;
+   text-align: center;
+   padding-top: 5rem;
+   color : #fff;
+	font-size: 1.5rem;
+	font-style: italic;
+	font-family: "Times New Roman", sans-serif;
+	font-weight: bold;
+}
+.get5 p {
+	font-size: 3.6rem;
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	margin: 0;
+	font-style: normal;
+
+}
+.pad {
+	padding: 21rem;
+}
+.get5-1 div {
+	
+	font-style: italic;
+	font-size: 3.6rem;
+	text-align: center;
+	
+}
+.get5-1 p{
+	font-size: 1.6rem;
+}	
+.foot {
+	margin: 0;
+	padding: 2rem 0;
+	display: flex;
+	/* flex-wrap: wrap; */
+	justify-content: space-between;
+	align-items: center;
+	padding: 5rem;
+	background: #f7f7f7;
 }
 
