@@ -311,8 +311,9 @@ position: relative;
 	width: 115px;
 	padding: 1px;
 	top: 35px;
-	right: 630px;
+	left: 630px;
 	background-color: #f57365;
+	display: block;
 }
 
 .section5 li {
