@@ -44,6 +44,7 @@ header a {
 	text-decoration: none;
 	transition: all .4s ease-in-out;
 	font-weight: 700;
+	text-transform: uppercase;
 }
 header .conteiner {
 	display: flex;
@@ -73,19 +74,20 @@ nav a:active {
 	color: #f57365;
 	text-decoration: underline;
 	}
-/* .section {
-	padding: 34rem 0 0 0 ;
-} */
 
+.section {
+	padding: 20rem 0;
+}
 .sections {
 	background-position: center;
 	background-size: cover;
 	background-color: #0e0d1b;
 	color: #fff;
 	height:100vh;
-	padding-top: 34rem;
 	text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
-	text-align: center;
+	/* display: flex; */
+	flex-direction: column;
+	justify-content: center;
 }
 .section h1 {
 	font-size: 3.6rem;
@@ -105,18 +107,17 @@ nav a:active {
 	
 }
 .BStart {
+	display: inline-block;
 	color: #fff;
 	border: 2px solid #fff;
-	text-align: center;
 	font-size: 1.8rem;
+	border-radius: 5px;
 	text-decoration: none;
 	font-weight: 700;
-	padding: 2rem;
+	padding: 2rem 1.5rem;
 	transition: all .4s ease-in-out;
-	border-radius: 5px;
 	width: 28rem;
-	height: 6.8rem;
-	display: inline-block;
+	
 }
 .BStart:hover,
 .BStart:focus,
@@ -153,6 +154,7 @@ position: relative;
 	/*outline: 1px solid red;*/
 	width: 33%;
 	color: #000;
+	position: relative;
 	
 	}
 .get img {
@@ -160,13 +162,20 @@ position: relative;
 	border: 2px solid black;
 	padding: 2.6rem
 }
+/* Убрать его нельзя т.к. средняя картинка другого размера */
+.getR img{
+	width: 116px;
+	height: 116px;
+	padding: 3.5rem 2.3rem; 
+}
+
 .get h3 {
 	font-size: 1.8rem;
 	font-weight: 700;
 	line-height: 3rem;
 	text-align: center;
-	text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55)
-
+	text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
+	text-transform: uppercase;
 }
 .get p {
 	font-size: 1.6rem;
@@ -177,17 +186,15 @@ position: relative;
 	text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55)
 
 }
-.getR img{
-	padding: 4.0rem 2.3rem; 
-}
-.get::before {
+
+.section2 h3::before {
 	content: "";
 	position: absolute;
 	width: 115px;
 	padding: 1px;
-	top: 270px;
+	top: 180px;
 	background-color: #f57365;
-	
+	text-align: center;
 }
 .section3 {
 	margin: 0 auto;
@@ -228,13 +235,21 @@ position: relative;
 	background-color: #f57365;
 }
 
-.get3 h1 {
+.get3 h2 {
 	width: 100%;
 	margin: 0;
 	font-size: 1.8rem;
 	font-weight: 700;
 	text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
-
+	text-transform: uppercase;
+}
+.get3 h2::before {
+	content: "";
+	position: absolute;
+	width: 115px;
+	padding: 1px;
+	top: 235px;
+	background-color: #f57365;
 }
 .get3 p {
 	color: #000000;
@@ -247,13 +262,12 @@ position: relative;
 .get3 p:first-of-type {
 	margin-top:  4rem;
 }
+
 .section4 {
 	margin: 0 auto;
 	width: 100%;
 	padding: 5rem 10rem ;
-	
-	
-	}
+}
 .get4 {
 	margin: 0 auto;
 	width: 85%;
@@ -280,7 +294,7 @@ position: relative;
 }
 .section5 {
 	margin: 10rem 0;
-	position: relative;
+	
 }
 
 .get5 div:hover,
@@ -290,62 +304,58 @@ position: relative;
 	
 }	
 
-.section5 h1 {
+.section5 h2 {
 	font-size: 1.8rem;
 	text-align: center;
 	font-weight: 700;
 	margin: 0;
-	
+	text-transform: uppercase;
+	position: relative;
 }
-.pad {
-	margin: 0;
-	padding: 5rem 0;
-	display: flex;
-	flex-wrap: wrap; 
-	
-}
-
-.pad::before {
+.section5 h2::before {
 	content: "";
 	position: absolute;
 	width: 115px;
 	padding: 1px;
 	top: 35px;
-	left: 630px;
 	background-color: #f57365;
-	display: block;
+	margin: 0 0 0 37px;
 }
 
-.section5 li {
-	width: 20%;
+.pad {
+	margin: 0;
+	padding: 5rem 0;
+	display: flex;
+	flex-wrap: wrap; 
+	align-content: space-around; 
+}
+.pad li {
+	/* width: 20%; */
 	list-style-type: none;
 	font-size: 0;
-}
-.pad1 {
-	margin: 1rem 0 6rem 0;
-	display: flex;
-	flex-wrap: wrap
-}
-.section5 img {
-	max-width: 100%;
-}
-.get5 {
 	position: relative;
+	align-items: center;
+}
+.get5 img {
+	max-width: 302px;
+	/* overflow:hidden; */
 }
 .get5 div {
 	position: absolute;
-   top: 0;
-   left: 0;
-   margin: 0 auto;
-   height: 95%;
-   width: 95%;
-   text-align: center;
-   padding-top: 5rem;
-   color : #fff;
+   	top: 0;
+   	left: 0;
+   	margin: 0 auto;
+  	text-align: center;
+   	padding: 7rem 2rem;
+   	color : #fff;
 	font-size: 1.5rem;
 	font-style: italic;
 	font-family: "Times New Roman", sans-serif;
 	font-weight: bold;
+	overflow:hidden;
+	width: 100%;
+	height: 100%;
+
 	}
 .get5 p {
 	font-size: 3.6rem;
@@ -353,13 +363,17 @@ position: relative;
 	font-weight: 700;
 	margin: 0;
 	font-style: normal;
-text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55)
-
+	text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55)
 }
-
-.get5-1 div {
+.pad1 {
+	margin: 1rem 0 6rem 0;
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	padding: 0 20rem;
 	
-	/*font-style: italic;*/
+}
+.get5-1 div {
 	font-size: 3.6rem;
 	text-align: center;
 	font-weight: 700;
@@ -377,6 +391,9 @@ text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55)
 	justify-content: space-between;
 	align-items: center;
 	background: #f7f7f7;
-	
 }
 
+/* HELPERS */
+.text-center {
+	text-align: center;
+}
